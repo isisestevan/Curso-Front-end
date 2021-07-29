@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versao do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo de estrutura básica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Isis">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5,tecnologia">
+    <style>
+        /*serve para esconder o "subnivel" do item*/
+        li ul{
+           height: 0;
+           overflow: hidden;
+           transition: height .5s;
+        }
+        /*quando eu passo o mouse sobre a li que tem outra lista dentro dela,ela as apresenta*/
+        li:hover ul{
+            background-color: aquamarine;
+            display: block;
+            height: 40px;
+        }
+
+    </style>
+  </head>
+  <body>
+      <!-- Listas ordenadas-->
+    <ul>
+        <li> item 1</li>
+        <li> item 2</li>
+        <li> item 3
+            <ul>
+                <li>item 3.1</li>
+                <li>item 3.2</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <!--Lista de definição-->
+    <dl>
+        <dt>Item 1</dt>
+        <dd>Descrição sobre o item1</dd>
+        <dd>Mais uma descrição sobre o item 1</dd>
+        <dt>Item 2</dt>
+        <dt>Item 3</dt>
+    </dl>
+  </body>
+</html>
