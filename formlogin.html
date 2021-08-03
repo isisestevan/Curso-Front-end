@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versao do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo de estrutura básica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Isis">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5,tecnologia">
+    <style>
+        .formlogin{
+            width: 300px;
+            margin: 150px auto 0;
+            font-family: sans-serif;
+            
+        }
+        .formlogin label{
+            display: block;
+            margin-top: 10px;
+            
+            
+        }
+        .formlogin legend{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            
+            
+        }
+        .formlogin fieldset{
+            background-color: beige;
+            padding: 30px;
+            
+        }
+        #password, #user, .bt{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 5px;
+            font-size: 12px;
+            background-color: rgb(201, 248, 248);
+        }
+        #password:focus, #user:focus{
+            background-color:white;
+        }
+        .bt{
+            margin-top: 15px;
+        }
+        #user{
+            margin-bottom:9px;
+            
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo Formulário</h1>
+    <form class="formlogin"action="#" method="get" target="_blank">
+      <fieldset>
+        <legend>Login:</legend>
+        <label for="user">Usuário:</label>
+        <input id="user" type="text" name="user" autofocus>
+        <label for="password">Senha:</label>
+        <input id="password" type="password" name="password">
+        <input class="bt" type="submit" value="LOG IN">
+      </fieldset>
+    </form>
+  </body>
+</html>
