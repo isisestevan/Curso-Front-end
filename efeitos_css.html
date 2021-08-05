@@ -48,7 +48,17 @@
             font-family: California;
         }
         #transition{
-            
+            background-color: orangered;
+            width: 200px;
+            height: 200px;
+            transition-property: width,height;
+            transition-duration: 1s,2s;
+            transition-timing-function: linear,cubic-bezier(0.075, 0.82, 0.165, 1);
+           transition-delay: .5s;
+        }
+        #transition:hover{
+            width: 400px;
+            height: 400px;
         }
     </style>
   </head>
